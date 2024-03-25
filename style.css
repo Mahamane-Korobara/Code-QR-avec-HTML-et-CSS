@@ -1,0 +1,48 @@
+body {
+    background-color: rgba(60, 60, 187, 0.551);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centrer verticalement le contenu */
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    max-width: 80%;
+    padding: 20px;
+    border-radius: 15px;
+    overflow: hidden; /* Empêche le contenu de dépasser du conteneur */
+}
+
+img {
+    border-radius: 15px;
+    width: 100%; /* Utilise une largeur relative */
+    max-width: 350px; /* Limite la largeur maximale de l'image */
+}
+
+.text {
+    text-align: center;
+    width: 100%; /* Utilise une largeur relative */
+    max-width: 400px; /* Limite la largeur maximale du texte */
+}
+
+/* Adaptation pour les écrans de tablette */
+@media screen and (min-width: 850px) and (max-width: 1024px) {
+    .container {
+        max-width: 70%;
+    }
+}
+
+/* Adaptation pour les écrans de téléphone */
+@media screen and (max-width: 850px) {
+    .container {
+        max-width: 90%; 
+    }
+}
